@@ -1,1 +1,8 @@
 *~
+pkg/
+bazel-bin
+bazel-genfiles
+bazel-out
+bazel-testlogs
+bin/
+bazel-envoy_v2_sds
