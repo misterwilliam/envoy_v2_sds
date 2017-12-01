@@ -6,3 +6,7 @@ bazel-out
 bazel-testlogs
 bin/
 bazel-envoy_v2_sds
+*.pb.go
+src/golang.org/
+src/google.golang.org/
+src/github.com/

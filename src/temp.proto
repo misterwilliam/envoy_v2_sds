@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package temp;
+
+message HiReq {}
+
+message HiResp {}
+
+service Temp {
+	rpc Hi(HiReq) returns (HiResp) {}
+}

@@ -1,0 +1,16 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library", "go_test")
+
+proto_library(
+  name = "temp_proto",
+  srcs = ["temp.proto",],
+)
+
+go_binary(
+  name = "eds",
+  srcs = ["eds.go"],
+  deps = [
+    ":temp_proto",
+ #   "@envoy_api//api:eds",
+  ],
+  importpath = "github.com/misterwilliam/envoy_v2_sds/eds",
+)
