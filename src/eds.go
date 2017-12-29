@@ -1,14 +1,14 @@
 package main
 
 import (
-        "flag"
-        "fmt"
+  "flag"
+  "fmt"
 	"net"
 	"log"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 //	pb "eds"
-        pb "temp"
+  pb "github.com/misterwilliam/envoy_v2_sds/temp"
 )
 
 var (
