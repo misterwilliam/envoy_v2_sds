@@ -7,7 +7,8 @@ import (
 	"log"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
-//	pb "eds"
+//  _ "github.com/envoyproxy/data-plane-api/api/eds"
+  _ "github.com/misterwilliam/bazel_grpc/parent"
   pb "github.com/misterwilliam/envoy_v2_sds/temp"
 )
 
@@ -20,6 +21,9 @@ type tempServer struct {
 
 func(s *tempServer) Hi(ctx context.Context, req *pb.HiReq) (*pb.HiResp, error) {
 	return &pb.HiResp{}, nil
+}
+
+func (s *tempServer) FetchEndpoints(ctx context.Context) {
 }
 
 func newServer() *tempServer {

@@ -17,6 +17,8 @@ go_binary(
   srcs = ["eds.go"],
   deps = [
     ":temp_go_proto",
+#    "@envoy_api//api:eds_go_grpc",
+    "@com_github_misterwilliam_bazel_grpc//src:parent_go_proto",
     "@org_golang_google_grpc//:go_default_library",
     "@org_golang_x_net//context:go_default_library",
   ],
